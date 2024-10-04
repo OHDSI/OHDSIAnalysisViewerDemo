@@ -1,0 +1,10 @@
+services:
+  ohdsianalysisviewerdemoapp:
+    image: ohdsi/ohdsianalysisviewerdemoapp:1.0.0
+    env_file: .env
+    build:
+      context: .
+      args:
+        APP_NAME: OhdsiAnalysisViewerDemoApp
+    ports:
+      - "3838:3838"
