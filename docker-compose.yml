@@ -1,6 +1,6 @@
 services:
   ohdsianalysisviewerdemoapp:
-    image: ohdsi/ohdsianalysisviewerdemoapp:1.0.0
+    image: ohdsi/ohdsianalysisviewerdemoapp:1.0.1
     env_file: .env
     build:
       context: .
