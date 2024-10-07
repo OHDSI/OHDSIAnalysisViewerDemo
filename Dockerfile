@@ -38,8 +38,8 @@ COPY ./app.R .
 RUN --mount=type=secret,id=build_github_pat \
 	cp /usr/local/lib/R/etc/Renviron /tmp/Renviron \
         && echo "GITHUB_PAT=$(cat /run/secrets/build_github_pat)" >> /usr/local/lib/R/etc/Renviron \
-        && R -e "remotes::install_github('OHDSI/ShinyAppBuilder')" \
-	&& R -e "remotes::install_github('OHDSI/OhdsiShinyModules')" \
+        && R -e "remotes::install_github('OHDSI/ShinyAppBuilder', ref='v3.1.0')" \
+	&& R -e "remotes::install_github('OHDSI/OhdsiShinyModules', ref='v3.1.0')" \
         && cp /tmp/Renviron /usr/local/lib/R/etc/Renviron
 
 ENV DATABASECONNECTOR_JAR_FOLDER /root

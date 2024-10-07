@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # OHDSI Analysis Viewer Demo (2024)
 
 This repo holds the Docker container that provides the OHDSI Shiny
@@ -42,7 +36,7 @@ The problem definition is:
 Answering this question primarily revolves around conducting a
 population-level effect estimation (PLE) analysis. However, to fully
 demonstrate the power and new updates to the OHDSI Analysis Viewer, all
-possible modules were included in the application, which include: \
+possible modules were included in the application, which include:
 
 -   About
 
@@ -72,10 +66,10 @@ Below are the high-level study specifications used in the demo:
 
 **Outcome (O):** GI Bleed
 
-Per the example in the Book of OHDSI, "The ingedient concept IDs for
+Per the example in the Book of OHDSI, "The ingredient concept IDs for
 celecoxib and dicloflenac are 1118084 and 1124300, respectively.
 Time-at-risk starts on day of treatment initiation, and stops at the end
-of observation (a so-called intent-to-treat analysis". There were 3 data
+of observation (a so-called "intent-to-treat analysis"). There were 3 data
 sources that were included in this particular example: (1) France
 Disease Analyzer, (2) German Disease Analyzer, and (3) Merative
 MarketScan®️ Multi-State Medicaid Database.
